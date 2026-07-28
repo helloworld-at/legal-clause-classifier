@@ -1,0 +1,37 @@
+# CUAD QLoRA Fine-tuning Requirements
+# =====================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# GPU note:
+#   bitsandbytes requires a CUDA GPU. For CPU-only dev environments,
+#   the script will import but quantization will fail at runtime.
+#   See: https://github.com/TimDettmers/bitsandbytes
+
+# Core deep learning
+torch>=2.1.0
+transformers>=4.46.0
+
+# Parameter-efficient fine-tuning
+peft>=0.12.0
+
+# Supervised fine-tuning trainer
+trl>=0.11.0
+
+# 4-bit / 8-bit quantization (CUDA GPU required)
+bitsandbytes>=0.43.0
+
+# Distributed training & mixed precision support
+accelerate>=0.30.0
+
+# Experiment tracking
+wandb>=0.17.0
+
+# Dataset handling
+datasets>=2.20.0
+
+# Iterative multi-label stratification (used by preprocess.py)
+iterative-stratification>=0.1.9
+
+# Hugging Face Hub access
+huggingface_hub>=0.23.0
