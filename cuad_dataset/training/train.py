@@ -63,7 +63,7 @@ VAL_FILE = DATA_DIR / "val.jsonl"
 # ---------------------------------------------------------------------------
 # Model & training hyper-parameters
 # ---------------------------------------------------------------------------
-MODEL_ID = "Qwen/Qwen3-4B-Instruct"
+MODEL_ID = "Qwen/Qwen3-4B-Instruct-2507"
 WANDB_PROJECT = "cuad-qlora-qwen3-4b"
 
 QLORA_CFG = dict(
